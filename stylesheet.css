@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: 100%;
+}
+
+p {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.quadro {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2.5rem;
+  margin-top: 5%;
+}
+
+.container {
+  width: 450px;
+  height: 37.5rem;
+  margin: 1.2rem;
+  background: white;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.poster {
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+  margin: 25px 25px 0 25px;
+}
+
+/* Informações APP*/
+
+.container_app {
+  text-align: center;
+}
+
+.nomeApp {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.descricaoApp1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0.2rem 1.5rem 0 1.5rem;
+  text-align: center;
+}
+
+.descricaoApp2 {
+  font-size: 1.2rem;
+  margin: 1.5rem;
+  text-align: justify;
+}
+
+.input_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.input {
+  width: 380px;
+  height: 50px;
+  background-color: rgb(216, 215, 215);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.buscarBt {
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  width: 380px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+
+  background-color: #db202c;
+  color: #ffffff;
+}
+
+.buscarBt:hover {
+  opacity: 0.9;
+  background-color: #386e17d9;
+  color: #000;
+  transition: 0.7s;
+}
+
+/*Informações Filmes*/
+
+.poster {
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  margin: 25px 25px 0 25px;
+}
+
+.titulo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  margin-top: 0.1rem;
+}
+
+.informacoes_parte1 {
+  text-align: center;
+}
+
+.informacoes_parte2 {
+  margin: 0 25px;
+}
+
+.detalhes {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#sinopse {
+  margin: 0 25px;
+  text-align: justify;
+}
+
+.msgErro {
+  color: red;
+}
+
+/** Responsividade */
+@media screen and (max-width: 1000px) and (min-width: 468px) {
+  .container {
+    max-height: auto !important;
+  }
+}
